@@ -1,0 +1,197 @@
+/*!
+Theme Name: Granville Island Publishing
+Developed by Bright Wing Media
+Layout and vsion: Kaleeg Hainsworth
+URI: http://brightwing.ca
+Word Press dev: Md Anisur Rahman
+Author URI: http://www.anisurrahman.net
+Description: GRANVILLE ISLAND PUBLISHING THEME
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: gip
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 15px 0;
+    /*font-family: "Open Sans", Helvetica, Arial, sans-serif;*/
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-shadow: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+
+/*--------------------------------------------------------------
+# custom
+--------------------------------------------------------------*/
+header .menu li a{
+	color: #ffffff;
+}
+.made-with-by a{
+	color: #ffffff;
+}
+
+
+
+/* =Index pagination
+----------------------------------------------- */
+
+/* The containing box with a nice white background */
+.paging-navigation {
+	font-family: sans-serif;
+	/*padding: 1em;*/
+	/*background: #fff;*/
+	/*background: hsl(0, 0%, 100%);*/
+}
+
+/* Remove bullets and list indentation */
+.paging-navigation ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Make the list items appear horizontally */
+.paging-navigation li {
+	display: inline;
+}
+
+/* Give each link and the current item some padding to make them easy to click */
+a.page-numbers,
+span.page-numbers {
+	padding: .3em .7em;
+	color: #333;
+	color: hsl(0, 0%, 20%);
+}
+a.page-numbers{
+	border: 1px solid #000;
+}
+a:hover.page-numbers{
+	border: 1px solid #000;
+	background: #000;
+	color: #fff!important;
+}
+/* Link hover state */
+a:hover.page-numbers {
+	color: #000;
+	color: hsl(0, 0%, 0%);
+}
+
+/* Current page bold and dark */
+.paging-navigation .current {
+	font-weight: bold;
+	/*color: #000;
+	color: hsl(0, 0%, 0%);*/
+	border: 1px solid #000;
+	background: #000;
+	color: #fff!important;
+}
+
+
+.big-sticky {
+    background-size: cover;
+}
+.big-sticky p.lead{
+	color: #fff;
+}
+.top {
+    position: fixed;
+    z-index: 999;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 50%;
+    color: #000;
+    background-color: #fff;
+    opacity: 0.3;
+    cursor: pointer;
+}
+.widget-area div ul{
+	padding-left: 0px!important;
+}
+
+.grid figure figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: none;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.product-images{
+	
+	
+}
+
+
+.woocommerce #content div.product div.images, .woocommerce div.product div.images, .woocommerce-page #content div.product div.images, .woocommerce-page div.product div.images {
+    float: left;
+    width: 100%;
+}
+.product-images .flex-control-thumbs li {
+    padding: 2%;
+    padding-top: 4%;
+}
+.single-product .quantity{
+	float: right;
+    margin-top: 20px;
+    margin-left: 15px;	
+}
+
+.grid figure {
+    overflow: hidden;
+}
+.grid figure {
+    overflow: hidden;
+	max-width: 260px;
+}
+
+.related  .price, .related .add-to-cart-container{
+	display: none!important;
+}
